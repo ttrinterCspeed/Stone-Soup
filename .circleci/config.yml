@@ -115,6 +115,7 @@ jobs:
           name: Build Docs
           environment:
             SPHINX_GALLERY_PARALLEL: 2
+            COVERAGE_CORE: sysmon
           command: |
             . venv/bin/activate
             python .circleci/install_coverage_subprocess_pth.py
